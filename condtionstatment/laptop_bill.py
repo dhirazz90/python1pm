@@ -58,11 +58,16 @@ if location == 1:
 grand_total = dell_price + toshiba_price + mac_price + home_delivery + bag_option + plastic_price +gift_bag_price + VAT_amount
 
 print("laptop price:", price)
-print("delivery amount:",home_delivery)
-print(" bag price:", bag_price)
-print("gift bag price:", gift_bag_price)
-print("plastic bag price", plastic_price)
-print("VAT amount", VAT_amount)
+if home_delivery == 1000:
+    print("delivery amount:",home_delivery)
+if bag_price > 0:
+    print(" bag price:", bag_price)
+if gift_bag_price > 0:
+    print("gift bag price:", gift_bag_price)
+if  plastic_price >0:
+    print("plastic bag price", plastic_price)
+if VAT_amount > 0:
+    print("VAT amount", VAT_amount)
 print("grand total:", grand_total)
 
 
