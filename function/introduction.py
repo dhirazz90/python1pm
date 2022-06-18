@@ -33,7 +33,7 @@ print(add(x,y,z))
 
 """
 
-
+"""
 def take_vaule():
     
     p = int(input("enter pricipal: "))
@@ -51,3 +51,17 @@ def calculator():
 def display():
     print (f"your SI is: {calculator()}")
 pass
+"""
+
+
+def get_doc(any_function):
+    def inner():
+        return any_function.__doc__
+    return inner
+
+#get_doc
+def users():
+    """i am user"""
+    return"hello "
+
+print(users())

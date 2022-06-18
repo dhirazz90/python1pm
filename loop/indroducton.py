@@ -53,7 +53,14 @@ while x < a:
     else:
         print(x,"is odd",)
 """
-
+"""
 abc = ["ram", "shyam", "rita" ]
 for i in abc:
     print(i, end = ',')
+"""
+def fun(x,y):
+    
+    yield f"addtion is: (x+y)" 
+    yield f"sub is: (x-y)"
+    yield f"multi is: (x*y)"
+    
